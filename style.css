@@ -1,0 +1,54 @@
+
+:root{--green:#07513b;--deep:#022f24;--red:#e3262e;--lime:#b8e85d;--ink:#18352d;--muted:#62746d;--pale:#f2f8f4;--line:#dfe9e3}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 4.5%;box-shadow:0 3px 14px #002a1a08}
+.logo{width:158px;height:54px;object-fit:contain}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:12px;font-weight:800;padding:8px 0}
+nav a:hover,nav a:focus{color:var(--green);border-bottom:2px solid var(--red)}
+.phone{background:var(--deep);color:#fff;padding:11px 15px;border-radius:24px;font-size:12px;font-weight:800;white-space:nowrap}
+.hero{min-height:435px;display:flex;align-items:center;padding:58px 6%;color:#fff;background:linear-gradient(90deg,rgba(2,47,36,.94),rgba(2,47,36,.34)),url('assets/food-industry.jpg') center/cover}
+.inner{max-width:1180px;width:100%;margin:auto}
+.eyebrow{color:var(--lime);font-size:11px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase}
+h1{font-size:clamp(36px,4.6vw,58px);line-height:1.08;max-width:700px;margin:12px 0}
+.lime{color:var(--lime)}
+.hero p{max-width:650px;color:#eff7f2;font-size:16px}
+.btn{display:inline-block;background:var(--red);color:#fff;border:0;border-radius:24px;padding:12px 20px;font-size:12px;font-weight:900;margin-top:10px;cursor:pointer}
+.btn.green{background:var(--green)}
+.trust{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;background:var(--deep);color:#fff;padding:15px 5%;font-size:12px;font-weight:800}
+section{scroll-margin-top:95px}
+.wrap{max-width:1180px;margin:auto;padding:58px 22px}
+.title{text-align:center;color:var(--green);font-size:30px;line-height:1.25;margin:0 0 8px}
+.sub{text-align:center;color:var(--muted);max-width:760px;margin:0 auto 30px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.grid.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px;box-shadow:0 7px 22px #123c290c;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #123c2916}
+.card h3{color:var(--green);font-size:16px;margin:8px 0}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.photo{width:100%;height:175px;object-fit:cover;border-radius:8px;display:block;margin-bottom:10px}
+.symbol{font-size:28px}
+.soft{background:var(--pale)}
+.band{background:var(--deep);color:#fff;padding:32px 6%}
+.bandinner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.band h2{margin:0;font-size:25px}.band p{margin:5px 0;color:#d6e8df;font-size:13px}
+.aboutgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center}
+.aboutgrid h3{color:var(--green)}
+.processhero{color:#fff;background:linear-gradient(90deg,rgba(2,47,36,.93),rgba(2,47,36,.4)),url('assets/food-process.jpg') center/cover;padding:55px 6%}
+.processhero h2{font-size:38px;line-height:1.15;margin:6px 0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.step{padding:17px 14px;background:var(--pale);border-top:4px solid var(--lime);border-radius:0 0 10px 10px}
+.num{width:35px;height:35px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:900}
+.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+.contactbox{background:var(--pale);padding:24px;border-radius:12px;border:1px solid var(--line)}
+.field{margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:5px}
+.field input,.field textarea{width:100%;border:1px solid #cbdad1;border-radius:7px;padding:12px;font:inherit;background:#fff}
+.field textarea{min-height:115px;resize:vertical}
+footer{background:var(--deep);color:#fff;padding:30px 5%}
+.footinner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+footer p{font-size:12px;color:#d5e8df}
+.small{font-size:11px;color:var(--muted)}
+@media(max-width:900px){header{flex-wrap:wrap}.grid.five{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.contactgrid{grid-template-columns:1fr}}
+@media(max-width:620px){header{position:static;align-items:flex-start;flex-direction:column}.logo{width:140px}.nav{gap:13px}.phone{display:inline-block}.hero{min-height:360px;padding:42px 6%}.grid,.grid.five,.steps,.aboutgrid{grid-template-columns:1fr}.wrap{padding:38px 16px}.title{font-size:25px}.photo{height:200px}.contactgrid{grid-template-columns:1fr}}
